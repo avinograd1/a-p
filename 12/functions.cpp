@@ -116,12 +116,12 @@ std::string stringShift(std::string& str) {
 }
 
 std::string reverseFirstWord(std::string& str) {
-    size_t start = str.find_first_not_of(" ");
+    int start = str.find_first_not_of(" ");
     if (start == std::string::npos) {
         return str;
     }
 
-    size_t end = str.find_first_of(" ", start);
+    int end = str.find_first_of(" ", start);
     if (end == std::string::npos) {
         end = str.length();
     }
