@@ -28,7 +28,7 @@ bool checkAlpha(char original) {
 int countCombinations(std::string& str) {
     int count = 0;
     std::string delimiters = " ,.!?-";
-    for (size_t i = 0; i < str.size() - 2; ++i) {
+    for (int i = 0; i < str.size() - 2; ++i) {
         if (checkAlpha(str[i]) && (delimiters.find(str[i + 1]) != std::string::npos) && checkAlpha(str[i + 2])) {
             ++count;
             //std::cout << str[i] << str[i + 1] << str[i + 2] << std::endl;
@@ -82,7 +82,7 @@ std::vector<std::string> splitWords(std::string& str) {
 
 std::string joinWords(std::vector<std::string>& words) {
     std::string result;
-    for (size_t i = 0; i < words.size(); ++i) {
+    for (int i = 0; i < words.size(); ++i) {
         result += words[i];
         if (i != words.size() - 1) {
             result += " ";
@@ -102,7 +102,7 @@ std::string stringShift(std::string& str) {
     std::vector<std::string> words = splitWords(str);
 
     int consonantWordCount = 0;
-    for (size_t i = 0; i < words.size(); ++i) {
+    for (int i = 0; i < words.size(); ++i) {
         if (checkAlpha(words[i][0])) {
             ++consonantWordCount;
             if (consonantWordCount == 3) {
