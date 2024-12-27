@@ -14,10 +14,10 @@ int main() {
     shiftRight(str);
     std::cout << str << std::endl << std::endl;
 
-    std::cout << "Count of combinations: " << countCombinations(str) << std::endl;
-    std::cout << "String after remove between spaces: " << '\"' << removeBetween(str) << '\"' << std::endl;
-    std::cout << "String after shifting: " << '\"' << stringShift(str) << '\"' << std::endl;
-    std::cout << "String after reversing: " << '\"' << reverseFirstWord(str) << '\"' << std::endl;
+    std::cout << "1. Count of combinations: " << countCombinations(str) << std::endl;
+    std::cout << "2. String after remove between spaces: " << '\"' << removeBetween(str) << '\"' << std::endl;
+    std::cout << "3. String after shifting: " << '\"' << stringShift(str) << '\"' << std::endl;
+    std::cout << "4. String after reversing: " << '\"' << reverseFirstWord(str) << '\"' << std::endl;
 
     return 0;
 }
